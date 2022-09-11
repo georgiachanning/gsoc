@@ -2,7 +2,7 @@
 
 This document serves as the final submission of the GSOC'22 project <Edge connectivity and edge disjoint spanning trees in digraphs>. This will likely be updated as I plan to keep working on this project beyond Summer of Code.
 
-## <The Arc>
+## The Arc
 
 My proposal, which can also be seen in this repository, was for code to find edge connectivity within SageMath's graphs module. By the time Summer of Code started, that project had already been completed by my mentor, so a scope change was necessary. The first place I looked for a new project was the TO-DOs of the edge_connectivity file that was being merged. 
 
@@ -27,7 +27,7 @@ The work began by understanding the flow of the two different codebases and the 
 
 
 
-## <Usage>
+## Usage
   
 Gabow's packing algorithm can be called from the edge connectivity file.
 
@@ -37,6 +37,6 @@ Gabow's packing algorithm can be called from the edge connectivity file.
 Once the ticket is merged into SageMath development (and then eventually standard release), the code can be called by instantiating a graph.
 
 
-## <To-Do>
+## To-Do
 
 At this point, all functionality is implemented and compiles but has not been tested and will likely not function as intended until further work is done. In the next few weeks and months, I plan to continue working on the code until it has reached a merge-able state. 
