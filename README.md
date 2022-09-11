@@ -14,7 +14,7 @@ Ultimately, we changed the scope to implementing the tree-packing algorithms pro
 
 ### Key Challenges
 
-Key challenges I experienced included a number of small, but pestering technical issues as well as larger issues related to the fundamental project. 
+Key challenges I experienced included a number of small but pestering technical issues as well as larger issues related to the fundamental project. 
   
 At the beginning of the project, I got a new computer. Unfortunately, it was challenging to compile sage on my new computer as the sage install process has not yet been optimized for Mac M1 chips. On the smaller side, I was unable for some time to push to and pull from the Sage Trac server. To solve this problem, I turned the the sage-devel Gogole Group for help and after a number of back and forths solved the problem. In trying to solve the problem, I had to uninstall and reinstall sage, which posed additional problems. 
   
@@ -23,9 +23,9 @@ More fundamentally, I struggled to understand all of Gabow's algorithm for some 
   
 ### The Work
 
-The work began by understanding the flow of the two different codebases and the mapping of various different variable names between the codebases. 
-
-
+The coding began by understanding the flow of the two different codebases and the mapping of various different variable names between the codebases. The current codebase is written in Cython and the reference base is written in C++. The ticket that implemented Gabow's edge connectivity was merged into the development branch a few weeks into the coding period, so I was able to start a new branch off the standard development. Another GSOC contributor was simultaneously working a DFS speed-up for the edge connectivity code and once that was implemented I was able to call that code within my own to add the DFS speed-up to the packing arborescence functionality. 
+  
+Otherwise, I began implemented functions generally in the order they were needed and returned to edit functions as I progressed. 
 
 ## Usage
   
