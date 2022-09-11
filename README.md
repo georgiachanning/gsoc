@@ -8,7 +8,7 @@ My proposal, which can also be seen in this repository, was for code to find edg
 
 While we evaluated new project ideas, I read the thing I said I was going to read (book thing) and blah blah blah.
 
-Some of those ideas were unsolved mathematical problems, which was beyond what i could reasonably accomplish in a summer.
+Some of those ideas were unsolved mathematical problems, which was beyond what I could reasonably accomplish in a summer. For example, after the start of the coding period, I was researching ways to extend the edge connectivity code to work on multi-edge graphs, however...
 
 ### Key Challenges
 
