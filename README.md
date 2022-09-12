@@ -26,15 +26,17 @@ More fundamentally, I struggled to understand all of Gabow's algorithm for some 
 The coding began by understanding the flow of the two different codebases and the mapping of various different variable names between the codebases. The current codebase is written in Cython and the reference base is written in C++. The ticket that implemented Gabow's edge connectivity was merged into the development branch a few weeks into the coding period, so I was able to start a new branch off the standard development. Another GSOC contributor was simultaneously working a DFS speed-up for the edge connectivity code and once that was implemented I was able to call that code within my own to add the DFS speed-up to the packing arborescence functionality. 
   
 Otherwise, I began implemented functions generally in the order they were needed and returned to edit functions as I progressed. 
+  
+The ticket can be seen on the [Sage Trac server](https://trac.sagemath.org/ticket/34230). The full edge connectivity file and my patch can be seen separately in this repository.
 
 ## Usage
   
-Gabow's packing algorithm can be called from the edge connectivity file.
+Gabow's packing algorithm can be called from the edge connectivity file. 
 
 
 ### Once Merged
   
-Once the ticket is merged into SageMath development (and then eventually standard release), the code can be called by instantiating a graph.
+Once the ticket is merged into SageMath development (and then eventually standard release), the code can be called by instantiating a graph and following the usage procedure described above.
 
 
 ## To-Do
