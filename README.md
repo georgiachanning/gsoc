@@ -31,7 +31,22 @@ The ticket can be seen on the [Sage Trac server](https://trac.sagemath.org/ticke
 
 ## Usage
   
-Gabow's packing algorithm can be called from the edge connectivity file. 
+The implementation of Gabow's packing algorithm belongs to the GabowEdgeConnectivity class. Therefore, calling to code requires creating an instance of the GabowEdgeConnectivity class.
+  
+INPUT:
+
+    - ``D`` -- a :class:`~sage.graphs.digraph.DiGraph`
+  
+EXAMPLES:
+
+    A random `d`-regular digraph is `d`-edge-connected::
+
+        sage: from sage.graphs.edge_connectivity import GabowEdgeConnectivity
+        sage: D = DiGraph(graphs.RandomRegular(6, 50))
+        sage: while not D.is_strongly_connected():
+        ....:     D = DiGraph(graphs.RandomRegular(6, 50))
+        sage: GabowEdgeConnectivity(D).edge_connectivity()
+        6
 
 
 ### Once Merged
