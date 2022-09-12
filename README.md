@@ -27,7 +27,7 @@ The coding began by understanding the flow of the two different codebases and th
   
 Otherwise, I began implemented functions generally in the order they were needed and returned to edit functions as I progressed. 
   
-The ticket can be seen on the [Sage Trac server](https://trac.sagemath.org/ticket/34230). The full edge connectivity file and my patch can be seen separately in this repository.
+The ticket can be seen on the [Sage Trac server](https://trac.sagemath.org/ticket/34230) and my changes can be seen on [this branch](https://git.sagemath.org/sage.git/diff?id=05e01a282b50eb3a42d72bd6fb5466c958b4128f). The full edge connectivity file and my patch can be seen separately in this repository.
 
 ## Usage
   
