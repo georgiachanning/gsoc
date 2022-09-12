@@ -45,9 +45,10 @@ EXAMPLES:
         sage: D = DiGraph(graphs.RandomRegular(6, 50))
         sage: while not D.is_strongly_connected():
         ....:     D = DiGraph(graphs.RandomRegular(6, 50))
-        sage: GabowEdgeConnectivity(D).edge_connectivity()
-        6
-
+        sage: S = GabowEdgeConnectivity(D).edge_disjoint_spanning_trees()
+        sage: S
+        <list of spanning trees>
+        
 
 ### Once Merged
   
