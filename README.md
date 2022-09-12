@@ -37,17 +37,13 @@ INPUT:
 
     - ``D`` -- a :class:`~sage.graphs.digraph.DiGraph`
   
-EXAMPLES:
+EXAMPLES::
 
-    A random `d`-regular digraph is `d`-edge-connected::
-
-        sage: from sage.graphs.edge_connectivity import GabowEdgeConnectivity
-        sage: D = DiGraph(graphs.RandomRegular(6, 50))
-        sage: while not D.is_strongly_connected():
-        ....:     D = DiGraph(graphs.RandomRegular(6, 50))
-        sage: S = GabowEdgeConnectivity(D).edge_disjoint_spanning_trees()
-        sage: S
-        <list of spanning trees>
+    sage: from sage.graphs.edge_connectivity import GabowEdgeConnectivity
+    sage: D = digraphs.Complete(4)
+    sage: S = GabowEdgeConnectivity(D).edge_disjoint_spanning_trees()
+    sage: S
+    [[(1,4),(4,2),(2,3)],[(1,2),(1,3),(3,4)]]
         
 
 ### Once Merged
